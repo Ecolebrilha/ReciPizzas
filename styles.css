@@ -1,0 +1,73 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('file:///C:/Users/ferna/OneDrive/Imagens/onibus.png');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.user-options {
+    float: right;
+}
+
+.user-options a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.main {
+    padding: 20px 0;
+}
+
+.intro {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.intro h2 {
+    margin-top: 0;
+}
+
+.intro p {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.intro img {
+    flex: 1;
+    margin-right: 20px;
+}
