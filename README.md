@@ -1,1 +1,1 @@
-# RenovaCura
+# O RenovaCura é uma plataforma que visa arrecadar fundos para apoiar crianças com câncer e suas famílias, fornecendo recursos financeiros para cobrir despesas médicas e garantir que essas crianças recebam o tratamento necessário.
