@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RenovaCura</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="top-section">
+        <h1>RenovaCura</h1>
+        <h4> Muitas crianças com câncer em hospitais necessitam de tratamentos caros e contínuos, porém, muitas famílias
+            não possuem recursos suficientes para arcar com esses custos, o que pode comprometer o acesso a cuidados médicos
+            adequados e impactar negativamente na saúde e no bem-estar dessas crianças.</h4>
+        <h4> O RenovaCura é uma plataforma que visa arrecadar fundos para apoiar crianças com câncer e suas famílias, fornecendo
+            recursos financeiros para cobrir despesas médicas e garantir que essas crianças recebam o tratamento necessário.
+            Ao se unir a nós, você contribui para renovar a esperança dessas crianças e suas famílias, oferecendo-lhes a oportunidade
+            de um futuro mais saudável e promissor.</h4>       
+    </div>
+    <div class="container">
+        <h1>Vaquinha Solidária</h1>
+        <p>Ajude crianças com câncer em hospitais e instituições. Junte-se a nós e seja parte dessa transformação!</p>
+        <button class="donate-button" onclick="showPaymentOptions()">Faça sua doação</button>
+        <div class="payment-title" id="paymentTitle">Escolha sua forma de pagamento:</div>
+        <div class="payment-options" id="paymentOptions">
+            <div class="payment-option" onclick="showDonationInput('PIX')">PIX</div>
+            <div class="payment-option" onclick="showDonationInput('Cartão de crédito')">Cartão de crédito</div>
+            <div class="payment-option" onclick="showDonationInput('Cartão de débito')">Cartão de débito</div>
+            <div class="payment-option" onclick="showDonationInput('Boleto')">Boleto</div>
+        </div>
+        <input type="number" class="donate-input" id="donationAmount" placeholder="Valor (R$)">
+        <button class="donate-button" id="donateButton" onclick="donate()" style="display: none;">Doar</button>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill" style="width: 0;"></div>
+        </div>
+        <p>Meta: R$ 50.000,00</p>
+        <p id="amountDonated">Arrecadado até agora: R$ 0,00</p>
+        <p id="goalReachedMessage" style="display: none; color: green;">Parabéns! A primeira meta foi batida.</p>
+    </div>
+
+    <div class="container">
+        <h1 style="text-align: center;">Hospitais e Instituições que trabalham em prol das crianças com câncer em Pernambuco:</h1>
+        <div class="tabs">
+            <a href="https://www.hcp.org.br/" class="tab"><div>Hospital de Câncer de Pernambuco (HCP)</div></a>
+            <a href="https://gac.org.br/" class="tab"><div>Grupo de Ajuda à Criança Carente com Câncer de Pernambuco (GAC-PE)</div></a>
+            <a href="https://www.gov.br/ebserh/pt-br/hospitais-universitarios/regiao-nordeste/hc-ufpe" class="tab"><div>Hospital das Clínicas da UFPE (HC-UFPE)</div></a>
+        </div>
+        <div class="image-container">
+        <img src="images/hospital1.jpg" alt="Hospital 1" class="hospital-image">
+        <img src="images/hospital2.jpg" alt="Hospital 2" class="hospital-image">
+        <img src="images/hospital3.jpg" alt="Hospital 3" class="hospital-image">
+    </div>
+        <div class="tabs">
+            <a href="https://www.solutudo.com.br/empresas/pe/recife/hospitais/cehope-centro-de-hematologia-e-oncologia-pediatrica-s-s-ltda-3839663" class="tab"><div>Centro de Hematologia e Oncologia Pediátrica</div></a>
+            <a href="https://oncologiainfantilnordeste.com.br/" class="tab"><div>Oncologia Infantil Nordeste</div></a>
+            <a href="https://nacc.org.br/" class="tab"><div>Núcleo de Apoio à Criança com Câncer (NACC)</div></a>
+        </div>
+        <div class="image-container">
+        <img src="images/hospital4.jpg" alt="Hospital 4" class="hospital-image">
+        <img src="images/hospital5.jpg" alt="Hospital 5" class="hospital-image">
+        <img src="images/hospital6.jpg" alt="Hospital 6" class="hospital-image">
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-info">
+            <div>
+                <h1>Endereço</h1>
+                <p><strong>Rua Visconde de Mamanguape, 106</strong></p>
+                <p><strong>Encruzilhada, 52030-010</strong></p>
+                <p><strong>Recife-PE</strong></p>
+            </div>
+            <div>
+                <h1>Email</h1>
+                <p><strong>renovacura@gmail.com</strong></p>
+            </div>
+            <div>
+                <h1>Telefone</h1>
+                <p><strong>(81) 98512-7220</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
