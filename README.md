@@ -1,1 +1,1 @@
-# O RenovaCura é uma plataforma que visa arrecadar fundos para apoiar crianças com câncer e suas famílias, fornecendo recursos financeiros para cobrir despesas médicas e garantir que essas crianças recebam o tratamento necessário.
+# O ReciPizzas é uma pizzaria online com diversas opções de pizzas bem recheadas e gostosas, faça o seu pedido conosco e aprecie nosso cardápio delicioso!
