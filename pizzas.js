@@ -145,7 +145,7 @@ let pizzaJson = [
       {
         id: 12,
         name: 'Lombiry',
-        img: 'images/pizza12.png',
+        img: 'images/pizza13.png',
         alt: 'pizza-12',
         price: [28.00, 31.00, 33.00],
         sizes: [
