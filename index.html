@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ReciPizzas oferece uma deliciosa variedade de pizzas feitas com ingredientes frescos e de alta qualidade. Explore nosso cardápio para descobrir uma ampla seleção de sabores, desde clássicos como Mussarela e Calabresa até opções exclusivas como Brasileira e Banana com Canela. Faça seu pedido agora e desfrute da autêntica experiência de pizza da ReciPizzas!">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>ReciPizzas</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preload" href="images/pizza.png" as="image">
+</head>
+<body>
+
+    <section id="about-us">
+        <div class="about-content">
+            <h1><strong>Sobre Nós</strong></h1>
+            <p><strong>Somos uma pizzaria dedicada a fornecer pizzas deliciosas e de alta qualidade para nossos clientes.</strong></p>
+        </div>
+    </section>
+
+    <div class="models">
+
+        <div class="pizza-item">
+            <a href="">
+                <div class="pizza-item--img"><img src="" /></div>
+                <div class="pizza-item--add">+</div>
+            </a>
+            <div class="pizza-item--price">R$ --</div>
+            <div class="pizza-item--name">--</div>
+            <div class="pizza-item--desc">--</div>
+        </div>
+
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+
+    </div>
+
+    <header>
+        <nav class="menu">
+            <ul class="menu-list">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre-nos">Sobre Nós</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle-btn" aria-label="Abrir menu de navegação"><i class="fas fa-bars"></i></button>
+        <div class="logo">
+            <img src="images/logo.avif" alt="ReciPizzas Logo">
+            <h1>ReciPizzas</h1>
+        </div>
+        <div class="menu-openner"><span>0</span>🛒</div>
+            
+    </header>
+
+    <main>
+        
+        <h2>Cardápio</h2>
+
+        <div class="pizza-area"></div>
+    </main>
+
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">❌</div>
+            <h1>Suas Pizzas</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+
+    <div class="pizzaWindowArea">
+        <div class="pizzaWindowBody">
+            <div class="pizzaInfo--cancelMobileButton">Voltar</div>
+            <div class="pizzaBig">
+                <img src="" />
+            </div>
+            <div class="pizzaInfo">
+                <h1>--</h1>
+                <div class="pizzaInfo--desc">--</div>
+                <div class="pizzaInfo--sizearea">
+                    <div class="pizzaInfo--sector">Tamanho</div>
+                    <div class="pizzaInfo--sizes">
+                        <div data-key="P" class="pizzaInfo--size">PEQUENA <span>--</span></div>
+                        <div data-key="M" class="pizzaInfo--size">MÉDIA <span>--</span></div>
+                        <div data-key="G" class="pizzaInfo--size selected">GRANDE <span>--</span></div>
+                    </div>
+                </div>
+                <div class="pizzaInfo--pricearea">
+                    <div class="pizzaInfo--sector">Preço</div>
+                    <div class="pizzaInfo--price">
+                        <div class="pizzaInfo--actualPrice">R$ --</div>
+                        <div class="pizzaInfo--qtarea">
+                            <button class="pizzaInfo--qtmenos">-</button>
+                            <div class="pizzaInfo--qt">1</div>
+                            <button class="pizzaInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizzaInfo--addButton">Adicionar ao carrinho</div>
+                <div class="pizzaInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+    <section>
+    <footer class="footer">
+        <div class="contact-info">
+            <h1><strong>Contato</strong></h1>
+            <div class="social-media">
+                <a href="mailto:recipizzas@gmail.com"><i class="fas fa-envelope"></i> E-mail</a><br>
+                <a href="https://www.google.com/maps/place/R.+Visc.+de+Mamanguape,+106+-+Encruzilhada,+Recife+-+PE,+52030-010/@-8.038132,-34.8877988,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab18f58607e25d:0xea60c9785e2f5f0d!8m2!3d-8.038132!4d-34.8877988!16s%2Fg%2F11c2d85c_q?entry=ttu"><i class="fas fa-map-marker-alt"></i> Endereço</a><br>
+                <a href="https://wa.me/+5581985127220"><i class="fab fa-whatsapp"></i> WhatsApp</a><br>
+                <a href="https://www.instagram.com/fernando_antonio87"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+    </footer>    
+</section>
+    <script src="pizzas.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
