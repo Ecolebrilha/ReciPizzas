@@ -1,141 +1,182 @@
 @import url('https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap');
 
 * {
-    box-sizing: border-box;
-}
-
-body {
-    background-color:#EEE;
-    font-family:'Lato', Helvetica, Arial;
-    font-size:15px;
-    display:flex;
-    flex-direction: column;
-    margin:0;
+    margin: 0;
     padding: 0;
-    min-height:100vh;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-#about-us {
-    background-color: #ef9a9a;
-    padding: 40px;
-    text-align: center;
+.content {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d32f2f;
+    position: fixed;
+    padding-left: 30rem;
 }
 
-.about-content {
-    max-width: 800px;
-    margin: 0 auto;
+.content .list-menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.about-content h1 {
-    font-size: 28px;
-    color: #333;
+.content .list-menu li a{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 200ms ease-in;
 }
 
-.about-content p {
-    font-size: 18px;
-    color: #333;
+.first-section{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(/images/fundopizza.avif);
+    background-color: #0d0d0d;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-section .conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .first-section h1{
+      color: #ffc506;
+      font-size: 6rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      font-family: 'Indie Flower', cursive;
+  }
+  
+  .first-section h2{
+      color: rgb(177, 177, 177);
+      font-size: 3rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-family: 'Indie Flower', cursive;
+      margin-bottom: 3rem;
+  }
+
+  .btn button {
+    width: 230px;
+    height: 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffc506;
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+    transition: all 400ms ease-in;
+    margin-top: 5rem;
+}
+
+.btn button:hover {
+    border: 3px solid #ffc506;
+    background-color: transparent;
+    color: #ffc506;
+}
+
+.btn {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn a {
+    color: black; /* Cor do texto padrão */
+    text-decoration: none; /* Remover sublinhado do link */
+    transition: color 0.3s; /* Adicionar transição suave de cor */
+}
+
+.btn a:hover {
+    color: #ffc506; /* Cor do texto ao passar o mouse */
+}
+
+.sobre-nos {
+    background-color: #1f1e1f;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentsobre {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+main h2 {
+    font-size: 40px;
+    color: #d32f2f;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.sobre-nos img {
+    width: 400px;
+    height: 400px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+}
+
+.contentsobre h2 {
+   font-size: 6rem;
+   margin-bottom: 1rem;
+   font-family: 'Indie Flower', cursive;
+}
+
+.contentsobre p {
+   text-align: center;
+   font-size: 1.8rem;
+   width: 600px;
 }
 
 .models {
     display:none;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #d32f2f;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
-}
-
-.logo img {
-    width: 50px;
-    height: auto;
-    margin-right: 1px;
-}
-
-.logo h1 {
-    margin: 0;
-    font-size: 24px;
-    color: #fff;
-}
-
-header .pizza-logo {
-    width: auto;
-    height: 20px;
-    margin-right: 1px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 24px;
-    color: #fff;;
-}
-
-.menu {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #333;
-    padding-top: 60px;
-    transition: all 0.3s ease;
-    z-index: 1000;
-}
-
-.menu-list {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-.menu-list li {
-    padding: 15px;
-    text-align: center;
-}
-
-.menu-list li:hover {
-    background-color: #555;
-}
-
-.menu-toggle-btn {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #ef9a9a;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-    border: 2px solid #ef9a9a;
-}
-
-.fas.fa-bars { 
-    color: #333;
-    z-index: 1000;
-    font-size: 25px;
-}
-
-.menu-toggle-btn.active {
-    background-color: #f0f0f0;
-}
-
-.menu-list {
-    display: none;
-}
-
-.menu-list.show {
-    display: block;
 }
 
 .menu-openner {
@@ -146,6 +187,7 @@ header h1 {
     padding: 5px 20px;
     border-radius: 5px;
     cursor: pointer;
+    z-index: 10;
 }
 
 .menu-openner span {
@@ -184,12 +226,6 @@ aside.show {
 
 .cart--area h1 {
     display: relative;
-}
-
-main {
-    flex:1;
-    padding:20px;
-    margin-top:60px;
 }
 
 h1, h2 {
@@ -510,6 +546,55 @@ h1, h2 {
     background-color:#35af4a;
 }
 
+.contatos {
+    width: 100%;
+    background-color: #1f1e1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: Center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    padding-bottom: 4rem;
+}
+
+.contatos h1 {
+   font-size: 6rem;
+   margin-bottom: 3rem;
+   font-family: 'Indie Flower', cursive;
+}
+
+.contatos-secao {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.contatos-secao i{
+    margin-right: 1rem;
+
+}
+
+.contatos-secao div{
+    cursor: pointer;
+}
+
+.contatos-secao div:hover{
+    color: #ffc506;
+}
+
+/* Estilos para o footer */
+footer {
+    height: 25px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width:1000px) {
     .pizza-area {
         grid-template-columns: repeat(2, 1fr);
@@ -622,94 +707,182 @@ h1, h2 {
     }
 }
 
-#img-logo {
-    width: 50px;
+@media (max-width: 1200px) {
+    .main {
+        display: block;
+        
+    }
+
+    .sobre-nos img {
+        width: 600px;
+        margin-left: -2px;
+    }
+
+    
 }
 
-footer {
-    background-color: #d32f2f;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
+@media (max-width: 980px) {
+   
+    html {
+        font-size: 50%;
+    }
+    
 }
 
-.main-content {
-    min-height: calc(100vh - 120px);
-    position: relative;
-    flex: 1;
+@media (max-width: 870px) {
+    .content {
+        justify-content: space-between;
+        padding: 0px 40px;
+        position: relative;
+    }
+
+    .content .list-menu{
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        margin: 6px auto;
+        transition-duration: 0.5s ;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        position: absolute;
+        top: 20px;
+        left: 20px; /* Ajuste a posição para o canto superior esquerdo */
+        z-index: 11;
+    }
+
+    .content.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #1f1e1f;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content.on .logo {
+        display: none;
+    }
+
+    .content.on .menu-toggle {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .content.on .list-menu {
+        display: block;
+        
+    }
+
+    .content.on .list-menu li {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .content.on .list-menu li a {
+        font-size: 4rem;
+        display: block;
+    }
+
+
+    .content.on .menu-toggle .one {
+        transform: rotate(45deg) translate(8px, -7px);
+    }
+    .content.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .content.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(20px, -6px);
+    }
+
+    .contatos-secao {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        
+    }
+
+    .contatos-secao div {
+        margin: 2rem;
+        
+    }
+
 }
 
-.footer {
-    background-color: #d32f2f;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+
+@media (max-width: 720px) {
+    .conteudo-principal h1 {
+        width: 350px;
+        text-align: center;
+    }
 }
 
-.contact-info {
-    text-align: center;
+@media (max-width: 645px) {
+    .sobre-nos img {
+        width: 400px;
+        margin-left: 10px;
+    }
+
+    .contentsobre p {
+        text-align: center;
+        width: 400px;
+     }
+
+     .btn {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .contatos-secao {
+       width: 200px;
+        
+    }
+    .conteudo-principal h2 {
+        width: 200px;
+        text-align: center;
+    }
+
+    .btn {
+        width: 150px;
+    }
 }
 
-.contact-info h1 {
-    margin-bottom: 15px;
-    color: #fff;
-}
+@media (max-width: 399px) {
 
-.social-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: 15px;
-}
+    .conteudo-principal h1 {
+       font-size: 3rem;
+    }
+    .conteudo-principal h2 {
+       font-size: 2rem;
+    }
 
-.social-media a {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 5px 10px;
-    color: #fff;
-    text-decoration: none;
-}
 
-.footer-section.links {
-    color: white;
-    text-align: center;
-}
+    .sobre-nos img {
+        width: 300px;
+        height: auto;
+        margin-left: 10px;
+    }
 
-.footer-section.links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: inherit;
-}
+    .contentsobre p {
+        text-align: center;
+        width: 200px;
+     }
 
-.footer-section.links a i {
-    margin-right: 10px;
-}
-
-.footer-section.links h1 {
-    margin-bottom: 20px;
-}
-
-.footer-section.links a[href="mailto:recipizzas@gmail.com"] i {
-    margin-right: 10px;
-    margin-left: 1px;
-}
-
-.footer-section.links a[href="https://www.google.com/maps/place/R.+Visc.+de+Mamanguape,+106+-+Encruzilhada,+Recife+-+PE,+52030-010/@-8.038132,-34.8877988,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab18f58607e25d:0xea60c9785e2f5f0d!8m2!3d-8.038132!4d-34.8877988!16s%2Fg%2F11c2d85c_q?entry=ttu"] i {
-    margin-right: 10px;
-    margin-left: 20px;
-}
-
-.footer-section.links a[href="https://wa.me/+5581985127220"] i {
-    margin-right: 10px;
-    margin-left: 28px;
-}
-
-.footer-section.links a[href="https://www.instagram.com/fernando_antonio87"] i {
-    margin-right: 10px;
-    margin-left: 25px;
-}
+    }
