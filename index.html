@@ -4,20 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ReciPizzas oferece uma deliciosa variedade de pizzas feitas com ingredientes frescos e de alta qualidade. Explore nosso cardápio para descobrir uma ampla seleção de sabores, desde clássicos como Mussarela e Calabresa até opções exclusivas como Brasileira e Banana com Canela. Faça seu pedido agora e desfrute da autêntica experiência de pizza da ReciPizzas!">
+    <meta name="theme-color" content="#d32f2f">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <title>ReciPizzas</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="preload" href="images/pizza.png" as="image">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
-
-    <section id="about-us">
-        <div class="about-content">
-            <h1><strong>Sobre Nós</strong></h1>
-            <p><strong>Somos uma pizzaria dedicada a fornecer pizzas deliciosas e de alta qualidade para nossos clientes.</strong></p>
-        </div>
-    </section>
 
     <div class="models">
 
@@ -44,27 +39,48 @@
     </div>
 
     <header>
-        <nav class="menu">
-            <ul class="menu-list">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre-nos">Sobre Nós</a></li>
+        <div class="content">
+            <ul class="list-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobrenos">Sobre nós</a></li>
                 <li><a href="#cardapio">Cardápio</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#contatos">Contatos</a></li>
             </ul>
-        </nav>
-        <button class="menu-toggle-btn" aria-label="Abrir menu de navegação"><i class="fas fa-bars"></i></button>
-        <div class="logo">
-            <img src="images/logo.avif" alt="ReciPizzas Logo">
-            <h1>ReciPizzas</h1>
-        </div>
         <div class="menu-openner"><span>0</span>🛒</div>
-            
+
+        <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+    </div>
     </header>
 
-    <main>
+    <section class="first-section" id="home">
         
-        <h2>Cardápio</h2>
+        <div class="conteudo-principal">
+            <h1>Deixe seu dia mais saboroso!!!</h1>
+            <h2>As pizzas mais recheadas da Região</h2>
+            <div class="btn">
+                <button><a href="#cardapio">Faça o seu pedido!</a></button>
+            </div>
+        </div>    
+    </section>
 
+    <section class="sobre-nos" id="sobrenos"> 
+        <div class="main">
+            <div class="contentsobre">
+                <h2>Sobre nós</h2>
+                <p><strong>O ReciPizzas é uma pizzaria online com diversas opções de pizzas bem recheadas e gostosas, faça o seu pedido conosco e aprecie nosso cardápio delicioso!</strong></p>
+            </div>     
+            <div class="img-cozinha">
+                <img src="images/logo.avif" alt="logo">
+            </div>
+        </div>    
+    </section>
+
+    <main>
+        <h2 class="cardapio" id="cardapio">Cardápio</h2>
         <div class="pizza-area"></div>
     </main>
 
@@ -124,19 +140,25 @@
             </div>
         </div>
     </div>
-    <section>
-    <footer class="footer">
-        <div class="contact-info">
-            <h1><strong>Contato</strong></h1>
-            <div class="social-media">
-                <a href="mailto:recipizzas@gmail.com"><i class="fas fa-envelope"></i> E-mail</a><br>
-                <a href="https://www.google.com/maps/place/R.+Visc.+de+Mamanguape,+106+-+Encruzilhada,+Recife+-+PE,+52030-010/@-8.038132,-34.8877988,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab18f58607e25d:0xea60c9785e2f5f0d!8m2!3d-8.038132!4d-34.8877988!16s%2Fg%2F11c2d85c_q?entry=ttu"><i class="fas fa-map-marker-alt"></i> Endereço</a><br>
-                <a href="https://wa.me/+5581985127220"><i class="fab fa-whatsapp"></i> WhatsApp</a><br>
-                <a href="https://www.instagram.com/fernando_antonio87"><i class="fab fa-instagram"></i> Instagram</a>
+    <section class="contatos" id="contatos">
+        <h1>Contatos</h1>
+        <div class="contatos-secao">
+            <div>
+                <i class="fab fa-whatsapp"></i>
+                <span>(81) 98512-7220</span>
             </div>
-        </div>
-    </footer>    
-</section>
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Rua Visconde<br>de Mamanguape<br>106</span>
+            </div>
+            <div>
+                <i class="far fa-envelope"></i>
+                <span>recipiz@gmail.com</span>
+            </div>
+    </section>
+    <footer>
+        <h1>Desenvolvido por -> Fernando Antônio</h1>
+    </footer>
     <script src="pizzas.js"></script>
     <script src="script.js"></script>
 </body>
