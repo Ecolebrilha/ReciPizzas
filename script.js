@@ -1,7 +1,5 @@
 let modalKey = 0
-
 let quantPizzas = 1
-
 let cart = [] 
 
 const seleciona = (elemento) => document.querySelector(elemento)
@@ -299,13 +297,11 @@ pizzaJson.map((item, index ) => {
 }) 
 
 document.addEventListener('DOMContentLoaded', function() {
-    const menuToggleBtn = document.querySelector('.menu-toggle-btn');
+    const menuToggle = document.querySelector('.menu-toggle-btn');
     const menu = document.querySelector('.menu');
 
-    menuToggleBtn.addEventListener('click', function() {
-        menu.classList.toggle('open');
+    
     });
-});
 
 let show = true;
 const menuContent = document.querySelector('.content');
@@ -313,13 +309,16 @@ const menuToggle = menuContent.querySelector('.menu-toggle');
 const cartOpenner = document.querySelector('.menu-openner');
 
 menuToggle.addEventListener('click', () => {
-    // Toggle para ocultar ou mostrar o menu
+
     document.body.style.overflow = show ? 'hidden' : 'initial';
     menuContent.classList.toggle('on', show);
     show = !show;
 
-    // Oculta o menu-openner quando o menu-toggle é clicado
     cartOpenner.style.display = show ? 'block' : 'none';
+});
+
+document.getElementById('pedidoButton').addEventListener('click', function() {
+    window.location.href = '#cardapio';
 });
 
 mudarQuantidade()
