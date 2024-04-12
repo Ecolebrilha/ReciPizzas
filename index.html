@@ -4,13 +4,51 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ReciPizzas oferece uma deliciosa variedade de pizzas feitas com ingredientes frescos e de alta qualidade. Explore nosso cardápio para descobrir uma ampla seleção de sabores, desde clássicos como Mussarela e Calabresa até opções exclusivas como Brasileira e Banana com Canela. Faça seu pedido agora e desfrute da autêntica experiência de pizza da ReciPizzas!">
-    <meta name="theme-color" content="#d32f2f">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="theme-color" content="#ffc926">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" defer>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="icon" sizes="16x16" href="images/16.png">
+    <link rel="icon" sizes="20x20" href="images/20.png">
+    <link rel="icon" sizes="29x29" href="images/29.png">
+    <link rel="icon" sizes="32x32" href="images/32.png">
+    <link rel="icon" sizes="40x40" href="images/40.png">
+    <link rel="icon" sizes="48x48" href="images/48.png">
+    <link rel="icon" sizes="50x50" href="images/50.png">
+    <link rel="icon" sizes="55x55" href="images/55.png">
+    <link rel="icon" sizes="57x57" href="images/57.png">
+    <link rel="icon" sizes="58x58" href="images/58.png">
+    <link rel="icon" sizes="60x60" href="images/60.png">
+    <link rel="icon" sizes="64x64" href="images/64.png">
+    <link rel="icon" sizes="66x66" href="images/66.png">
+    <link rel="icon" sizes="72x72" href="images/72.png">
+    <link rel="icon" sizes="76x76" href="images/76.png">
+    <link rel="icon" sizes="80x80" href="images/80.png">
+    <link rel="icon" sizes="87x87" href="images/87.png">
+    <link rel="icon" sizes="88x88" href="images/88.png">
+    <link rel="icon" sizes="92x92" href="images/92.png">
+    <link rel="icon" sizes="100x100" href="images/100.png">
+    <link rel="icon" sizes="102x102" href="images/102.png">
+    <link rel="icon" sizes="114x114" href="images/114.png">
+    <link rel="icon" sizes="120x120" href="images/120.png">
+    <link rel="icon" sizes="128x128" href="images/128.png">
+    <link rel="icon" sizes="144x144" href="images/144.png">
+    <link rel="icon" sizes="152x152" href="images/152.png">
+    <link rel="icon" sizes="167x167" href="images/167.png">
+    <link rel="icon" sizes="172x172" href="images/172.png">
+    <link rel="icon" sizes="180x180" href="images/180.png">
+    <link rel="icon" sizes="196x196" href="images/196.png">
+    <link rel="icon" sizes="216x216" href="images/216.png">
+    <link rel="icon" sizes="256x256" href="images/256.png">
+    <link rel="icon" sizes="512x512" href="images/512.png">
+    <link rel="icon" sizes="1024x1024" href="images/1024.png">
 
     <title>ReciPizzas</title>
     <link rel="stylesheet" href="style.css"/>
-    <link rel="preload" href="images/pizza.png" as="image">
+    <link rel="preload" href="images/fundopizza.avif" as="image">
     <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 </head>
 <body>
 
@@ -62,7 +100,7 @@
             <h1>Deixe seu dia mais saboroso!!!</h1>
             <h2>As pizzas mais recheadas da Região</h2>
             <div class="btn">
-                <button><a href="#cardapio">Faça o seu pedido!</a></button>
+                <button id="pedidoButton">Faça o seu pedido!</button>
             </div>
         </div>    
     </section>
@@ -70,11 +108,11 @@
     <section class="sobre-nos" id="sobrenos"> 
         <div class="main">
             <div class="contentsobre">
-                <h2>Sobre nós</h2>
+                <h2>SOBRE NÓS</h2>
                 <p><strong>O ReciPizzas é uma pizzaria online com diversas opções de pizzas bem recheadas e gostosas, faça o seu pedido conosco e aprecie nosso cardápio delicioso!</strong></p>
             </div>     
             <div class="img-cozinha">
-                <img src="images/logo.avif" alt="logo">
+                <img src="images/pizza.avif" alt="logo">
             </div>
         </div>    
     </section>
@@ -102,7 +140,7 @@
                     <span>Total</span>
                     <span>R$ --</span>
                 </div>
-                <div class="cart--finalizar">Finalizar a compra</div>
+                <div class="cart--finalizar"><strong>Finalizar a compra</strong></div>
             </div>
         </div>
     </aside>
@@ -127,7 +165,7 @@
                 <div class="pizzaInfo--pricearea">
                     <div class="pizzaInfo--sector">Preço</div>
                     <div class="pizzaInfo--price">
-                        <div class="pizzaInfo--actualPrice">R$ --</div>
+                        <div class="pizzaInfo--actualPrice">R$ <span id="pizzaPrice">--</span></div>
                         <div class="pizzaInfo--qtarea">
                             <button class="pizzaInfo--qtmenos">-</button>
                             <div class="pizzaInfo--qt">1</div>
@@ -135,8 +173,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="pizzaInfo--addButton">Adicionar ao carrinho</div>
-                <div class="pizzaInfo--cancelButton">Cancelar</div>
+                <div class="pizzaInfo--addButton"><strong>Adicionar ao carrinho</strong></div>
+                <div class="pizzaInfo--cancelButton"><strong>Cancelar</strong></div>
             </div>
         </div>
     </div>
@@ -145,20 +183,33 @@
         <div class="contatos-secao">
             <div>
                 <i class="fab fa-whatsapp"></i>
-                <span>(81) 98512-7220</span>
+                <a href="https://api.whatsapp.com/send?phone=5581985127220">(81) 98512-7220</a>
             </div>
             <div>
                 <i class="fas fa-map-marker-alt"></i>
-                <span>Rua Visconde<br>de Mamanguape<br>106</span>
+                <a href="https://maps.google.com.br/maps?q=Rua+Visconde+de+Mamanguape,+106,+Encruzilhada,+Recife+-+PE,+52030-010">Rua Visconde<br>de Mamanguape<br>106</a>
             </div>
             <div>
                 <i class="far fa-envelope"></i>
-                <span>recipiz@gmail.com</span>
+                <a href="mailto:recipiz@gmail.com">recipiz@gmail.com</a>
             </div>
     </section>
     <footer>
-        <h1>Desenvolvido por -> Fernando Antônio</h1>
+        <h1>&copy; Desenvolvido por -> Fernando Leite ツ</h1>
     </footer>
+    <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js')
+              .then(registration => {
+                console.log('Service Worker registrado com sucesso!', registration.scope);
+              })
+              .catch(error => {
+                console.error('Falha ao registrar o Service Worker:', error);
+              });
+          });
+        }
+      </script>
     <script src="pizzas.js"></script>
     <script src="script.js"></script>
 </body>
