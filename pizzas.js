@@ -2,7 +2,7 @@ let pizzaJson = [
     {
         id: 1,
         name: 'Mussarela',
-        img: 'images/pizza.avif',
+        img: 'images/pizza1.avif',
         alt: 'Pizza de Mussarela',
         price: [20.00, 23.00, 25.00],
         sizes: [
@@ -82,7 +82,7 @@ let pizzaJson = [
         name: 'Banana com canela',
         img: 'images/pizza7.avif',
         alt: 'Pizza de Banana com canela',
-        price: [27.00, 30.00, 32.00],
+        price: [25.00, 28.00, 30.00],
         sizes: [
           '6 fatias',
           '8 fatias',
