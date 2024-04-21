@@ -76,7 +76,7 @@ html {
       font-size: 6rem;
       text-transform: uppercase;
       margin-bottom: 1rem;
-      font-family: cursive;
+      font-family: 'Indie Flower', cursive;
 }
   
   .first-section h2{
@@ -84,7 +84,7 @@ html {
       font-size: 3rem;
       font-weight: 400;
       text-transform: uppercase;
-      font-family: cursive;
+      font-family: 'Indie Flower', cursive;
       margin-bottom: 3rem;
 }
 
@@ -216,6 +216,7 @@ aside.show {
 }
 
 h1, h2 {
+    font-family:'Hepta Slab', Helvetica, Arial;
     text-align: center;
 }
 
