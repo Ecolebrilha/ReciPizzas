@@ -321,21 +321,25 @@ document.getElementById('pedidoButton').addEventListener('click', function() {
     window.location.href = '#cardapio';
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("pedidoButton").addEventListener("click", function() {
 if ("geolocation" in navigator) {
-            // Solicita permissão para acessar a localização do usuário
-            navigator.geolocation.getCurrentPosition(function(position) {
-                console.log("Permissão de localização concedida");
-                // Aqui você pode usar a localização do usuário
-                console.log("Latitude:", position.coords.latitude);
-                console.log("Longitude:", position.coords.longitude);
-            }, function(error) {
-                // Caso o usuário negue a permissão
-                console.log("Permissão de localização negada");
-            });
-        } else {
-            // Caso o navegador não suporte a API de Geolocalização
-            console.log("Navegador não suporta Geolocalização");
-        }
+
+    navigator.geolocation.getCurrentPosition(function(position) {
+        console.log("Permissão de localização concedida");
+
+        console.log("Latitude:", position.coords.latitude);
+        console.log("Longitude:", position.coords.longitude);
+    }, function(error) {
+
+        console.log("Permissão de localização negada");
+    });
+} else {
+
+    console.log("Navegador não suporta Geolocalização");
+      }
+   });
+});
 
 mudarQuantidade()
 adicionarNoCarrinho()
