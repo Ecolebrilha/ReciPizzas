@@ -726,7 +726,7 @@ footer {
     .content {
         justify-content: space-between;
         padding: 0px 40px;
-        position: relative;
+        position: fixed;
     }
 
     .content .list-menu{
@@ -753,7 +753,7 @@ footer {
     }
 
     .content.on {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
