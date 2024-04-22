@@ -342,16 +342,6 @@ if ("geolocation" in navigator) {
    });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    var menuItems = document.querySelectorAll('.list-menu li a');
-
-    // Adicionando evento de clique a cada item do menu
-    menuItems.forEach(function(item) {
-        item.addEventListener('click', function(event) {
-        });
-    });
-});
-
 mudarQuantidade()
 adicionarNoCarrinho()
 atualizarCarrinho()
