@@ -1,6 +1,6 @@
 let pizzaJson = [
     {
-        id: 1,
+        id: 0,
         name: 'Mussarela',
         img: 'images/pizza1.avif',
         alt: 'Pizza de Mussarela',
@@ -13,7 +13,7 @@ let pizzaJson = [
         description: 'Molho de tomate, camada dupla de mussarela e orégano'
       },
       {
-        id: 2,
+        id: 1,
         name: 'Calabresa',
         img: 'images/pizza2.avif',
         alt: 'Pizza de Calabresa',
@@ -26,7 +26,7 @@ let pizzaJson = [
         description: 'Molho de tomate, mussarela, calabresa fatiada, cebola e orégano'
       },
       {
-        id: 3,
+        id: 2,
         name: 'Quatro Queijos',
         img: 'images/pizza3.avif',
         alt: 'Pizza de Quatro Queijos',
@@ -39,7 +39,7 @@ let pizzaJson = [
         description: 'Molho de tomate, camadas de mussarela, provolone, parmessão, gorgonzola e orégano'
       },
       {
-        id: 4,
+        id: 3,
         name: 'Brasileira',
         img: 'images/pizza4.avif',
         alt: 'Pizza Brasileira',
@@ -52,7 +52,7 @@ let pizzaJson = [
         description: 'Molho de tomate, mussarela, calabresa picada, palmito, champignon, azeitonas e orégano'
       },
       {
-        id: 5,
+        id: 4,
         name: 'Portuguesa',
         img: 'images/pizza5.avif',
         alt: 'Pizza de Portuguesa',
@@ -65,7 +65,7 @@ let pizzaJson = [
         description: 'Molho de tomate, mussarela, presunto, ovos, cebolas, pimentão, azeitona e orégano'
       },
       {
-        id: 6,
+        id: 5,
         name: 'Moda da Casa',
         img: 'images/pizza6.avif',
         alt: 'Pizza Moda da Casa',
@@ -78,7 +78,7 @@ let pizzaJson = [
         description: 'Molho de tomate, mussarela, carne de sol, tomates em cubos, coentro, cebola, azeitona, catupiry e orégano'
       },
       {
-        id: 7,
+        id: 6,
         name: 'Banana com canela',
         img: 'images/pizza7.avif',
         alt: 'Pizza de Banana com canela',
@@ -91,7 +91,7 @@ let pizzaJson = [
         description: 'Mussarela, banana, canela e açúcar'
       },
       {
-        id: 8,
+        id: 7,
         name: 'Chocolate com morango',
         img: 'images/pizza8.avif',
         alt: 'Pizza de Chocolate com morango',
@@ -104,7 +104,7 @@ let pizzaJson = [
         description: 'Creme de leite, lascas de chocolate e morangos'
       },
       {
-        id: 9,
+        id: 8,
         name: 'Marguerita',
         img: 'images/pizza9.avif',
         alt: 'Pizza de Marguerita',
@@ -117,7 +117,7 @@ let pizzaJson = [
         description: 'Molho de tomate, mussarela, alho em lascas, tomate cereja, manjericão e orégano'
       },
       {
-        id: 10,
+        id: 9,
         name: 'Bacon',
         img: 'images/pizza10.avif',
         alt: 'Pizza de Bacon',
@@ -130,7 +130,7 @@ let pizzaJson = [
         description: 'Mussarela, bacon, orégano e azeitona'
       },
       {
-        id: 11,
+        id: 10,
         name: 'Frango com Catupiry',
         img: 'images/pizza11.avif',
         alt: 'Pizza de Frango com Catupiry',
@@ -143,7 +143,7 @@ let pizzaJson = [
         description: 'Molho de tomate, mussarela, frango, catupiry e orégano'
       },
       {
-        id: 12,
+        id: 11,
         name: 'Lombiry',
         img: 'images/pizza12.avif',
         alt: 'Pizza de Lombiry',
