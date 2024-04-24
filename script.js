@@ -320,26 +320,42 @@ menuToggle.addEventListener('click', () => {
 document.getElementById('pedidoButton').addEventListener('click', function() {
     window.location.href = '#cardapio';
 });
+        const mostrarLocalizacaoUsuario = () => {
+            if ("geolocation" in navigator) {
+                
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    console.log("Permissão de localização concedida");
+                    
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+                    const googleMapsLink = `https://www.google.com/maps?q=${latitude},${longitude}`;
+                    
+                    document.getElementById('userLocation').innerHTML = `<a href="${googleMapsLink}" target="_blank">Sua localização</a>`;
+                }, function(error) {
+                    
+                    console.log("Permissão de localização negada");
+                });
+            } else {
+                
+                console.log("Navegador não suporta Geolocalização");
+            }
+        }
+        
+        seleciona('.menu-openner').addEventListener('click', () => {
+            if(cart.length > 0) {
+                seleciona('aside').classList.add('show');
+                seleciona('aside').style.left = '0';
+                mostrarLocalizacaoUsuario();
+            }
+        });
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Adiciona um event listener para o clique no botão "Faça o seu pedido!"
-    document.getElementById("pedidoButton").addEventListener("click", function() {
-if ("geolocation" in navigator) {
-    // Solicita permissão para acessar a localização do usuário
-    navigator.geolocation.getCurrentPosition(function(position) {
-        console.log("Permissão de localização concedida");
-        // Aqui você pode usar a localização do usuário
-        console.log("Latitude:", position.coords.latitude);
-        console.log("Longitude:", position.coords.longitude);
-    }, function(error) {
-        // Caso o usuário negue a permissão
-        console.log("Permissão de localização negada");
+    var menuItems = document.querySelectorAll('.list-menu li a');
+
+    menuItems.forEach(function(item) {
+        item.addEventListener('click', function(event) {
+        });
     });
-} else {
-    // Caso o navegador não suporte a API de Geolocalização
-    console.log("Navegador não suporta Geolocalização");
-      }
-   });
 });
 
 mudarQuantidade()
