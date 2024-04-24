@@ -2,12 +2,6 @@
     "name": "ReciPizzas",
     "short_name": "ReciPizzas",
     "description": "ReciPizzas oferece uma deliciosa variedade de pizzas feitas com ingredientes frescos e de alta qualidade. Explore nosso cardápio para descobrir uma ampla seleção de sabores, desde clássicos como Mussarela e Calabresa até opções exclusivas como Brasileira e Banana com Canela. Faça seu pedido agora e desfrute da autêntica experiência de pizza da ReciPizzas!",
-    "start_url": "/index.html",
-    "background_color": "#ffffff",
-    "theme_color": "#ffc926",
-    "display": "standalone",
-    "orientation": "portrait",
-    "lang": "pt"
     "icons": [
       {
         "src": "images/16.png",
@@ -195,3 +189,11 @@
         "sizes": "5184x3456",
         "type": "image/avif"
       }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#f7fa07",
+    "theme_color": "#ffc926",
+    "display": "standalone",
+    "orientation": "portrait",
+    "lang": "pt"
+}
